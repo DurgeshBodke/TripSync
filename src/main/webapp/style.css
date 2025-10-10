@@ -1,0 +1,275 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+body {
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background-color: #f6f8fb;
+    color: #222;
+    padding: 0;
+}
+
+/* ===========================
+   HEADER / NAVIGATION
+=========================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header img.logo {
+    height: 50px;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #0a4a84;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #e8f3ff, #f8fcff);
+    padding: 80px 60px;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 2.2em;
+    color: #004c91;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-text button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: #005fa3;
+}
+
+.hero-image img {
+    max-width: 380px;
+    border-radius: 10px;
+}
+
+/* ===========================
+   FEATURES SECTION
+=========================== */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #0077cc;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background-color: #f1f7fc;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 40px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #0077cc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 25px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+    }
+
+    .hero-image img {
+        margin-top: 25px;
+        width: 80%;
+    }
+}
+/* SEARCH FORM */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.search-form input, .search-form button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+}
+
+.search-form button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #005fa3;
+}
+
+/* TRAIN RESULTS */
+.results-section h3 {
+    text-align: center;
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.train-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 700px;
+}
+
+.train-card h3 {
+    text-align: center;
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.train-card p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* BOOKING FORM INSIDE CARD */
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.booking-form input {
+    flex: 1 1 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #005fa3;
+}
