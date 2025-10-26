@@ -7,7 +7,7 @@ public class DBConnection {
         try {
             if (conn == null || conn.isClosed()) {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/tripsync","root", "durgesh");
+                conn = DriverManager.getConnection("jdbc:mysql://maglev.proxy.rlwy.net:48695/railway","root", "OBbFAbZoAWbznExNsGPODbIeUOGcXTXf");
             }
         } catch (Exception e) {
             e.printStackTrace();
